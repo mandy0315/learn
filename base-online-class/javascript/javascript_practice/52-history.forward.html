@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <a href="52-history.back.html">下一頁</a>
+    <button class="js-link">js下一頁</button>
+    <script>
+        document.querySelector('.js-link').onclick = function () {
+            //js回下一頁,一定要瀏覽過頁面才會反應
+            window.history.forward();
+            // window.history.go(1);
+        }
+    </script>
+</body>
+
+</html>

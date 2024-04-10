@@ -1,0 +1,255 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+html {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+	vertical-align: middle;
+}
+q, blockquote {
+	quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+	content: "";
+	content: none;
+}
+a img {
+	border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+	display: block;
+}
+
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+	height: auto ;
+}
+/* CSS Reset end */
+/*pure-botton start*/
+/*!
+Pure v1.0.0
+Copyright 2013 Yahoo!
+Licensed under the BSD License.
+https://github.com/yahoo/pure/blob/master/LICENSE.md
+*/
+.btn {
+    /* Structure */
+    display: inline-block;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    box-sizing: border-box;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.btn::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/* Inherit .btn-g styles */
+.btn-group {
+    letter-spacing: -0.31em; /* Webkit: collapse white-space between units */
+    *letter-spacing: normal; /* reset IE < 8 */
+    *word-spacing: -0.43em; /* IE < 8: collapse white-space between units */
+    text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
+}
+
+.opera-only :-o-prefocus,
+.btn-group {
+    word-spacing: -0.43em;
+}
+
+.btn-group .btn {
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+}
+
+/*csslint outline-none:false*/
+
+.btn {
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0.5em 1em;
+    color: #444; /* rgba not supported (IE 8) */
+    color: rgba(0, 0, 0, 0.80); /* rgba supported */
+    border: 1px solid #999;  /*IE 6/7/8*/
+    border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
+    background-color: #E6E6E6;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.btn-hover,
+.btn:hover,
+.btn:focus {
+    /* csslint ignore:start */
+    filter: alpha(opacity=90);
+    /* csslint ignore:end */
+    background-image: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+    background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+}
+.btn:focus {
+    outline: 0;
+}
+.btn-primary,
+.btn-selected,
+a.btn-primary,
+a.btn-selected {
+    background-color: rgb(0, 120, 231);
+    color: #fff;
+}
+.btn-danger,
+.btn-selected,
+a.btn-danger,
+a.btn-selected {
+    background-color:red;
+    color: #fff;
+}
+/*pure-botton end*/
+.wrap{
+    max-width:960px;
+    margin:0 auto;
+}
+header{
+	height:200px;
+}
+.logo{
+	float: left;
+	padding:25px 0;
+}
+.logo a{
+	background:url(../image/M2.png);
+	width: 150px;
+	height: 150px;
+	text-indent:101%;
+	overflow: hidden;
+	white-space: nowrap;
+	display:block;
+}
+nav{
+	float: right;
+	margin:90px 0 0 0;
+	
+}
+nav li{
+	float: left;
+	margin-left:2px;
+}
+nav a{
+	background:blue;
+	display:block;
+	width:100px;
+	height:30px;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+	line-height:1.8;
+	text-decoration:none;
+}
+@media (max-width:768px){
+	header{
+		height:auto;
+	}
+	.logo{
+		float:none;
+		margin:0 auto;
+		width:250px;
+	}
+	.logo a{
+		background:url(../image/M1.png);
+		width: 250px;
+		height: 250px;
+	}
+	nav{
+		float: none;
+		margin:0 0 25px 0;
+	}
+	nav li{
+		float: none;
+		width: 85%;
+		margin:0 auto 10px auto;
+	}
+	nav a{
+		width: 100%;
+		border-radius:3px;
+	}
+}
+section{
+	float: left;
+	width: 65%;
+	border:1px solid black;
+    padding:10px 10px;
+}
+section h2{
+	font-size:26px;
+	font-weight:bold;
+	padding:30px 0 20px 0;
+}
+section p{
+	padding-bottom:30px;
+	line-height:28px;
+}
+aside{
+	float: right;
+	width: 33%;
+	border:1px solid black;
+	margin-left:2%;
+	padding:10px 10px 0 10px;
+}
+aside img{
+	margin-bottom:10px;
+	display: block;
+}
+.clearfix{
+	clear: both;
+}
+@media (max-width:768px){
+	section,aside{
+		float: none;
+		width: 85%;
+		border:none;
+		padding:0;
+		margin:auto;
+	}
+	aside img{
+		margin:auto;
+		width: 85%;
+		height:auto;
+		margin-bottom: 20px;
+	}
+
+}
+footer p{
+    padding:20px 0;
+    text-align: center;
+}

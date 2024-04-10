@@ -1,0 +1,124 @@
+/*消除瀏覽器設定*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+/*這裡的ol ul il也要*/
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/*如果要保留列表圖形文字 就把ol ul刪掉*/
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*消除瀏覽器設定最底*/
+
+
+/*兼容舊版語言*/
+*{
+box-sizing: border-box;
+/*firefox 舊版*/
+-moz-box-sizing:border-box;
+/*chrome 舊版*/
+-webkit-box-sizing:border-box;
+}
+/*要增加css樣式在他下方增加*/
+
+.bg{
+margin:0 auto; 
+width: 1000px;
+height: 405px;
+background:repeat-x url(../images/form-bg.png);
+}
+.bg h1{
+
+padding-top:20px; 
+text-align: center;
+font-family: MicrosoftJhengHei;
+font-size: 24px;
+line-height: 1.5;
+color: white;
+}
+
+.map{
+float: left;
+padding-left: 19px;
+padding-top: 30px;
+}
+.contact{
+padding-top: 30px;
+float:right;
+padding-right:19px;
+}
+.contact p{
+padding-bottom: 6px;
+color: white;
+font-size: 15px; 
+}
+.contact li{
+margin-bottom: 16px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea{
+	width: 460px;
+	height: 32px;
+    border-radius: 3px; 
+    border: solid 1px #e1e1e1;
+
+}
+.button{
+float: right;
+width: 70px;
+height: 32px;
+border-radius: 3px;
+font-size: 15px;
+color: white;
+background: #00cc99;
+border:none;
+cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+@media print
+    .page1
+        width: 40%
+        @at-root (without: media) 
+            .active 
+                color: red
+@media print
+    .page1
+        width: 40%
+        @at-root (without: all) 
+            .active 
+                color: red
+// 正常@at-root下完會出現.page1 .active color: red
+// https://www.sassmeister.com/

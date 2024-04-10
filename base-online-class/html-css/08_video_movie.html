@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>練習html_8</title>
+</head>
+<body>
+    <h1>置入視頻</h1>
+    <!--poster:影片封面
+        controls：播放/聲音/縮放
+        autoplay：自動播放
+        loop：結束循環-->
+    <video src="video/好像掉進愛情海裡.mp4"
+    poster="images/皇帝陛下video.jpg" 
+    width="480" height="420" controls="controls" autoplay＝"autoplay" loop="loop">Your browser does not support the video tag.
+    </video>
+    <!--Ogg 文件，适用于Firefox、Opera 以及 Chrome 浏览器
+        MPEG4文件，适用于ie9、Safari 浏览器-->
+    <video width="320" height="240" controls="controls">
+        <source src="movie.ogg" type="video/ogg">
+        <source src="video/好像掉進愛情海裡.mp4" type="video/mp4"> Your browser does not support the video tag.
+    </video>
+    <h1>置入音頻</h1>
+    <!--元素與上方相同-->
+    <audio src="audio/于文文《體面》動態歌詞版 【前任3_再見前任 插曲】.mp3"controls="controls" autoplay＝"autoplay" loop="loop">Your browser does not support the video tag.</audio>
+    <!--Ogg 文件，适用于Firefox、Opera 以及 Chrome 浏览器
+        MP3 文件，ie9、Safari 浏览器-->
+
+</body>
+</html>

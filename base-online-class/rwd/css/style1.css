@@ -1,0 +1,24 @@
+.title{
+    color:red;
+}
+/*權重下面會覆蓋上面 */
+/*先寫再寫手機使用max-width多少以下變化*/
+/*先寫手機再寫pc使用min-width多少以上變化*/
+@media (max-width:768px){
+  .title{
+      color:blue;
+  }
+  .content{
+      font-size:30px;
+  }
+}
+/*375是iphone6 size
+  橫式轉為768 藍色*/
+@media(max-width:375px){
+    .title{
+      color:yellow;
+  }
+  .content{
+      font-size:40px;
+  }
+}

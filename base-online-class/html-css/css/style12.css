@@ -1,0 +1,138 @@
+/*消除瀏覽器設定*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+/*這裡的ol ul il也要*/
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/*如果要保留列表圖形文字 就把ol ul刪掉*/
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*消除瀏覽器設定最底*/
+/*要增加css樣式在他下方增加*/
+h1{
+color:blue; 
+font-size:30px;
+}
+p{
+font-size:18px;
+}
+/*兼容舊版語言*/
+*{
+box-sizing: border-box;
+/*firefox 舊版*/
+-moz-box-sizing:border-box;
+/*chrome 舊版*/
+-webkit-box-sizing:border-box;
+}
+
+.wrap{
+margin: 0 auto;
+width: 1000px;
+}
+
+.form{
+width: 1000px;
+height:600px;
+background-image:url(../images/form-bg.png); 
+background-repeat: repeat-x; 
+background-color: #009872; 
+}
+.form h2{
+padding-top: 38px;
+  font-family: MicrosoftJhengHei;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.form p{
+font-size: 18px;
+color: white;
+line-height: 1.5;
+}
+/*上到下漸層*/
+.form2{
+width: 1000px;
+height: 350px;
+background:linear-gradient(#00644b,#009872);
+}
+/*左到右漸層*/
+.form3{
+width: 1000px;
+height: 350px;
+background:linear-gradient(to right,red,orange,yellow,green,blue,indigo,violet);
+}
+/*斜角到右上方漸層*/
+.form4{
+width: 1000px;
+height: 350px;
+background:linear-gradient(to right top,#00644b,#009872);
+}
+
+/*橢圓漸層*/
+.form5{
+width: 1000px;
+height: 350px;
+background:radial-gradient(red, yellow, green);
+}
+/*橢圓比例漸層*/
+.form5{
+width: 1000px;
+height: 350px;
+background:radial-gradient(red 40%, yellow 80%, green 95%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

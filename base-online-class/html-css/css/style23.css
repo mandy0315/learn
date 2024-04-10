@@ -1,0 +1,18 @@
+.container,.container2{
+    display: flex;
+    margin: 0 auto;
+    width: 500px;
+    background-color: #000000;
+    padding: 10px;
+    margin-bottom: 10px;
+    flex-direction: row-reverse;/* 水平右到左 預設row 左到右*/
+}
+.container2{
+    height: 500px;
+    flex-direction: column-reverse;/* 垂直向下並排 colum垂直向上並排 */
+}
+.item{
+    width: 300px;
+    background-color: pink;
+    margin: 10px;
+}

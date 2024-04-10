@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* line 2, ../sass/父屬性與子屬性.sass */
+.line {
+  font-family: Lucida Sans Unicode;
+  font-size: 20px;
+  font-weight: bold;
+  font-variant: small-caps;
+}

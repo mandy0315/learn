@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+    
+      header {
+        background-color: gray;
+      }
+    
+      .m-menu {
+        background-color: black;
+        width: 35px;
+        height: 35px;
+        display: block;
+      }
+    
+      .m-menu span {
+        opacity: 0;
+        width: 1px;
+        overflow: hidden;
+      }
+    
+      header {
+        padding: 20px 0;
+        position: relative;
+      }
+    
+      #m-menu {
+        display: none;
+      }
+    
+      .m-menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    
+      header nav {
+        position: fixed;
+        width: 80%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, .8);
+      }
+    </style>
+
+</head>
+<body>
+    <input type="checkbox" id="m-menu">
+    <header>
+      <div class="logo">
+        <img src="https://picsum.photos/200/100/?random=1">
+      </div>
+      <label for="m-menu" class="m-menu">
+        <span>選單</span>
+      </label>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+          </li>
+        </ul>
+      </nav>
+
+</body>
+</html>

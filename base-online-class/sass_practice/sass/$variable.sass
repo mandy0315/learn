@@ -1,0 +1,19 @@
+//全域變數"$＋名稱"類似symbol群組,修改變數值全部都會變
+//&上層屬性 用在偽元素與偽類 
+$link-color: red
+$font-l: 32px
+$font-m: 18px
+$font-s: 16px
+//字型/大小/粗細 網頁主體顏色 按鈕顏色
+
+.header
+	color: $link-color
+	font-size: $font-l
+	ul
+		color: $link-color
+		a
+			font-size: $font-m
+			&:hover
+				color: $link-color
+	li
+		font-size: $font-s

@@ -1,0 +1,52 @@
+section {
+  color: #000;
+}
+@media (max-width: 1200px) {
+  section {
+    color: red;
+  }
+}
+@media (max-width: 768px) {
+  section {
+    color: blue;
+  }
+}
+section a {
+  color: yellow;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@media (max-width: 1200px) {
+  section a {
+    color: blue;
+  }
+}
+section .s {
+  clear: both;
+}
+
+section .red {
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  background: red;
+}
+section .blue {
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  background: blue;
+}
+
+.button, .button2 {
+  background: red;
+}
+
+.button-1 {
+  background-color: blue;
+}
+
+.button-2 {
+  background-color: blue;
+}

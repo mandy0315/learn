@@ -1,0 +1,22 @@
+.menu{
+    margin: 0 auto;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu li{
+    width: 25%;
+    border: 1px solid black;/*有加box-sizing*/
+    text-align: center;
+}
+.menu li a{
+    display: block;
+    padding: 10px 0;
+    background-color: pink;
+    color: gray;
+    text-decoration: none;
+}
+.menu li a:hover{
+    background-color: gray;
+    color: pink;
+}

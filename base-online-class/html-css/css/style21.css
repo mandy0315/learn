@@ -1,0 +1,19 @@
+/*html權重 下面會覆蓋上面*/
+p{
+color: blue;
+}
+p{
+color: pink;
+}
+
+/*class+html累積權重分數*/
+.box1{
+color: red;
+}
+.box2 p{
+color: blue;
+}
+
+#box3{
+color: gray;
+}

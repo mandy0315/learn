@@ -1,0 +1,58 @@
+h1{
+color: blue;
+font-size: 36px;
+}
+
+p{
+color: #707070;
+font-size: 24px;
+}
+
+/*p class="名稱" 行與行的裝潢 在css前面要加.名稱{}*/
+.style1{
+color: red;
+font-size: 24px;
+}
+
+.style2{
+color: pink;
+font-size: 24px;
+}
+
+.content1{
+color: blue;
+/*font字型 family字體 size大小*/
+font-family: Verdana;
+font-size: 16px;
+/*line行列 height高度*/
+line-height: 1.5;
+/*text文字 align對齊 indent縮排 decoration裝飾*/
+text-align: left;
+text-indent: 32px;
+/*text-decoration: underline;*/
+}
+
+/*連結裝潢 :hover滑入 :active按下 */
+a{
+font-size: 30px;
+color: #707070;
+}
+a:hover{
+color: red;
+}
+
+/*border邊框 solid實心 deshed虛線 dotted點
+  border-   botton底 top上 left左 right右*/
+img{
+border-bottom: 2px dotted #707070
+}
+
+
+
+
+
+
+
+
+
+

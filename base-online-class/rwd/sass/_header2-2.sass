@@ -1,0 +1,99 @@
+header
+	height: 80px
+	border-bottom: 1px solid $font-color-g
+	position: relative
+.container
+	@include container
+	width: 100%
+.logo
+	float: left
+	padding: 1.5em 0
+	a
+		
+		background: url(../image/logo.svg) no-repeat
+		width: 170px
+		height: 35px
+		@include hide-text
+		display: block
+nav
+	width: 60%
+	float: right
+	overflow: hidden
+	margin-top: 1.5em
+	margin-right: 1em
+.menu	
+	float: right
+	width: 100%
+	li
+		float: left
+		width: calc(100%/6 - 2px)
+		margin-left: calc(2px * 6 / 5)
+		a
+			display: block
+			background: $font-color-g
+			color: #fff
+			text-align: center 
+			line-height: 1.5em
+			text-decoration: none
+			&:hover
+				background: $font-color-g-d
+.menu li:nth-child(6n+1) 
+	margin-left: 0
+
+.showmenu
+	display: none
+	float: right
+	
+@include ipad()
+	header
+		/*固定選單*/
+		position: fixed
+		width: 100%
+		/*注意要加背景色*/
+		background: white
+	.content
+		padding-top: 100px
+	nav
+		width: 10%
+	.showmenu	
+		display: block
+	.menu 
+		/*隱藏選單開始*/
+		max-height: 0px
+		overflow: hidden
+		/*隱藏選單結束*/
+		transition: max-height 1.5s
+		margin-top: 1px
+		/*絕對定位疊在網頁上*/
+		position: absolute
+		z-index: 100
+		/*header 80px+1px boder 線條*/
+		top: 79px
+		left: 0
+		right: 0
+		background: rgba(0,0,0,0.90)
+		li
+			float: none
+			width: 100%
+			margin-left: 0
+			a
+				line-height: 2.5em
+				background: none
+	
+			&:hover
+				background: #69CA62
+				color: #fff
+	.menu-show .menu
+		max-height: 500px
+	
+		
+
+	
+
+section
+	.container
+		@include container
+	p
+		width: 95%
+		margin: 0 auto
+		text-align: center

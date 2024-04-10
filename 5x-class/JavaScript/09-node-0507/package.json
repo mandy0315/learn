@@ -1,0 +1,20 @@
+{
+  "name": "09-node-0507",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.html",
+		"build": "parcel build src/index.html"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "http-server": "^0.12.3",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.2",
+    "webpack-config": "^7.5.0"
+  }
+}

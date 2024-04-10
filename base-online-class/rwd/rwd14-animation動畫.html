@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>animation動畫</title>
+    <style type="text/css">
+    /*  */
+        .D1{
+            width:100px;
+            height:100px;
+            background:red;
+            position:relative;
+            /* 名稱animation-name/ 1次/s秒 animation-duration/ 播放次數animation-iteration-count  無限infinite 預設為1次*/
+            /*ＩE*/
+            animation:D 5s infinite alternate-reverse; 
+            /*FireFox*/
+            -moz-animation:D 5s infinite alternate-reverse;
+            /*Chrome, Safari*/ 
+            -webkit-animation:D 5s infinite alternate-reverse; 
+            }
+            /* 關鍵影格 */
+            /*IE*/
+            @keyframes D{
+                from {left:0%;}
+                to {left:80%;}
+            }
+            /*FireFox*/
+            @-moz-keyframes D{
+                from {left:0%;}
+                to {left:80%;}
+            }
+            /*Chrome, Safari*/
+            @-webkit-keyframes D{
+                from {left:0%;}
+                to {left:80%;}
+            }
+
+    /* 顏色動畫 */
+        .a1{
+            width:100px;
+            height:100px;
+            background:red;
+            position:relative;
+            /* 名稱animation-name/ 1次/s秒 animation-duration/ 播放次數animation-iteration-count  無限infinite 預設為1次*/
+            animation:e 2s infinite alternate-reverse;
+            -moz-animation:e 2s infinite alternate-reverse; 
+            -webkit-animation:e 2s infinite alternate-reverse; 
+            }
+
+            @keyframes e{
+                from {background:red;}
+                to {background:black;}
+            }
+            @-moz-keyframes e{
+                from {background:red;}
+                to {background:black;}
+            }
+            @-webkit-keyframes e{
+                from {background:red;}
+                to {background:black;}
+            }
+
+        /* 透明度動畫 */    
+            .a{
+            animation:f 2s  normal; 
+            -moz-animation:f 2s  normal;
+            -webkit-animation:f 2s  normal; 
+            }
+            .d{
+                animation:f 8s  normal;
+            -moz-animation:f 8s  normal; 
+            -webkit-animation:f 8s  normal;
+            }
+            
+            @keyframes f{
+                from {opacity: 0;}
+                to {opacity: 1;}
+            }
+            
+            @-moz-keyframes f{
+                from {opacity: 0;}
+                to {opacity: 1;}
+            }
+          
+            @-webkit-keyframes f{
+                from {opacity: 0;}
+                to {opacity: 1;}
+            }
+        /* 逐格動畫 */
+            .gif{
+            width: 190px;
+            height: 265px;
+            background: url(image/漢堡.png);
+            animation:play 0.3s steps(2) infinite alternate running;
+            -moz-animation:play 0.3s steps(2) infinite alternate running;  
+            -webkit-animation:play 0.3s steps(2) infinite alternate running; 
+            }
+            .gif:hover{
+                animation:paused;
+            }
+            @keyframes play{
+                from {background-position: 0px;}
+                to {background-position: -380px;}
+            }
+            @-moz-keyframes play{
+                from {background-position: 0px;}
+                to {background-position: -380px;}
+            }
+            @-webkit-keyframes play{
+                from {background-position: 0px;}
+                to {background-position: -380px;}
+            }
+    </style>
+</head>
+<body>
+    <!-- 位移動畫 -->
+    <div style="width:700px;border:1px #ccc solid;padding:20px; margin-bottom: 20px;">
+        <div class="D1"></div>
+    </div>
+    <!-- 顏色動畫 -->
+    <div style="width:700px;border:1px #ccc solid;padding:20px;margin-bottom: 20px;">
+        <div class="a1"></div>
+    </div>
+    <!-- 透明度動畫 -->
+    <div class="c">
+        <div class="a"><h1>aaa</h1></div>
+        <div class="d"><p>ddddd</p></div>
+    </div>
+    <!-- 逐格圖片 -->
+    <div class="gif">
+    </div>
+
+</body>
+</html>

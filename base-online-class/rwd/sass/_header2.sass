@@ -1,0 +1,99 @@
+header
+	height: 80px
+	border-bottom: 1px solid $font-color-g
+	position: relative
+.container
+	@include container
+	width: 100%
+.logo
+	float: left
+	padding: 1.5em 0
+	a
+		background: url(../image/logo.svg) no-repeat
+		width: 170px
+		height: 35px
+		background-size: contain
+		@include hide-text
+		display: block
+nav
+	width: 60%
+	float: right
+	overflow: hidden
+	margin-top: 1.5em
+	margin-right: 1em
+.menu	
+	float: right
+	width: 100%
+	li
+		float: left
+		width: calc(100%/6 - 2px)
+		margin-left: calc(2px * 6 / 5)
+		a
+			display: block
+			background: $font-color-g
+			color: #fff
+			text-align: center 
+			line-height: 1.5em
+			text-decoration: none
+			&:hover
+				background: $font-color-g-d
+.menu li:nth-child(6n+1) 
+	margin-left: 0
+.mobile-link
+	display: none
+	float: right
+.mobile-close
+	display: none
+.mobilemenu
+	display: none
+	position: absolute
+	z-index: 100
+	top: 0
+	left: 0
+	right: 0
+	background: rgba(0,0,0,0.85)
+	
+@include ipad()
+	nav
+		width: 10%
+	.menu	
+		display: none
+	.mobile-link
+		display: block
+	.mobilemenu	
+		display: block
+
+	.open .mobilemenu	
+		position: fixed
+		top: 0
+		right: 0
+		left: 0
+		height: 1024px
+		.mobile-close
+			display: block
+			float: right
+			margin-right: 1.5em
+			margin-top: 1.6em
+		.menu
+			display: block
+			padding-top: 5em
+			li
+				display: block
+				width: 100%
+				margin-left: 0
+				padding: 1em
+				a
+					background: none
+					color: white
+					&:hover
+						color: $font-color-g-d
+
+
+section
+	.container
+		@include container
+	p
+		width: 95%
+		margin: 0 auto
+		padding-top: 20px 
+		text-align: center

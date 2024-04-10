@@ -1,0 +1,70 @@
+// 類似"變數"用法但變數只能單一，＠mixin能群組
+// 文字取代圖片/lnline-block使用/clearfix使用
+@mixin hide-text
+	text-indent: 101%
+	overflow: hidden
+	white-space: nowrap
+@mixin clearfix
+	clear: both
+@mixin display
+	display: inline-block
+
+//進階用法，加入變數：@mixin 名稱($變數名稱,$變數名稱2)
+@mixin circle($size,$bgcolor)
+	border-radius: 50%
+	height: $size
+	width: $size
+	background: $bgcolor  
+
+// @mixin @include與@content可以運用在響應式設計
+@mixin pc-s
+	@media (max-width: 1200px)
+		@content
+@mixin ipad
+	@media (max-width: 768px)
+		@content
+@mixin mobile-m
+	@media (max-width: 480px)
+		@content
+@mixin mobile-s
+	@media (max-width: 375px)
+		@content
+
+section
+	color: #000
+	@include pc-s()
+		color: red
+	@include ipad()
+		color: blue
+	a
+		color: yellow
+		@include hide-text
+		@include pc-s()
+			color: blue
+	.s
+		@include clearfix
+section
+	.red
+		@include circle(15px,red)
+	.blue
+		@include circle(16px,blue)
+	
+// @extend为一些相关的元素设置样式，就拿一组按钮来说，使用@extend让他们共享样式看起来合情合理。但是如果这些被复用的样式片段并不仅仅局限于相关的元素，那么使用@mixin或许更好
+
+.button
+	background: red
+
+.button2
+	@extend .button
+
+
+@mixin button2  
+	background-color: blue
+
+.button-1 
+	@include button2
+
+.button-2
+	@include button2
+
+

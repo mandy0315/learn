@@ -1,0 +1,17 @@
+@media print {
+  .page1 {
+    width: 40%;
+  }
+}
+.page1 .active {
+  color: red;
+}
+
+@media print {
+  .page1 {
+    width: 40%;
+  }
+}
+.active {
+  color: red;
+}

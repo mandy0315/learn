@@ -1,0 +1,31 @@
+@mixin hide-text
+	text-indent: 101%
+	overflow: hidden
+	white-space: nowrap
+@mixin clearfix
+	clear: both
+@mixin display
+	display: inline-block
+@mixin container
+	max-width: 1440px
+	margin: 0 auto
+
+
+
+// RWD
+@mixin pc-s
+	@media (max-width: 1200px)
+		@content
+@mixin ipad
+	@media (max-width: 768px)
+		@content
+/*界於段點之間調整 最大768到最小480之間加and*/
+@mixin ipad-mobile-m
+	@media (max-width: 768px) and (min-width: 480px)
+		@content
+@mixin mobile-m
+	@media (max-width: 480px)
+		@content
+@mixin mobile-s
+	@media (max-width: 375px)
+		@content

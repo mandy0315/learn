@@ -1,0 +1,134 @@
+/*消除瀏覽器設定*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+/*這裡的ol ul il也要*/
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/*如果要保留列表圖形文字 就把ol ul刪掉*/
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*消除瀏覽器設定最底*/
+/*要增加css樣式在他下方增加*/
+h1{
+color:blue; 
+font-size:30px;
+}
+p{
+font-size:18px;
+}
+/*兼容舊版語言*/
+*{
+box-sizing: border-box;
+/*firefox 舊版*/
+-moz-box-sizing:border-box;
+/*chrome 舊版*/
+-webkit-box-sizing:border-box;
+}
+.img2{
+width: 174px;
+height: 36px;
+background-image:url(../images/logo.png); 
+}
+
+.productlist{
+width: 1000px;
+margin:0 auto; 
+}
+
+.sale1{
+position: absolute;
+left: 0;
+top: 0;
+background: red;
+padding: 8px;
+color: white;
+font-weight: bold;
+}
+.sale2{
+position: absolute;
+left: 0;
+top: 0;
+background: yellow;
+padding: 8px;
+color: red;
+font-weight: bold;
+}
+.productlist img{
+width: 100%;
+padding-bottom: 10px;
+}
+.productlist li{
+position: relative;
+float: left;
+width: 240px;
+height: 350px;
+/*border: 1px black solid;*/
+margin-left: 5px;
+margin-right: 5px;
+margin-bottom: 10px;
+}
+.productlist li h2{
+margin-left:10px;
+margin-bottom: 10px;
+font-size: 16px; 
+}
+.productlist li p{
+margin-left:10px;
+font-size: 16px;
+}
+.productlist li span{
+font-size: 24px;
+font-weight: bold;
+color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

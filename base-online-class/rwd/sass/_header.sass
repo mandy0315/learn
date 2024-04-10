@@ -1,0 +1,51 @@
+.container
+	@include container
+.logo
+	float: left
+	padding: 20px 0
+	a
+		display: block
+		background: url(../image/logo.svg) no-repeat
+		width: 170px
+		height: 35px
+		@include hide-text
+@include ipad()
+	.logo
+		float: none
+		margin: 0 auto
+		width: 240px
+		a
+			width: 240px
+			height: 50px
+nav
+	float: right
+	padding: 25px 0
+	width: 60%
+	li
+		float: left
+		margin-left: 0.5%
+		width: 16.1%
+		a
+			display: block
+			background: $font-color-g
+			color: #fff
+			line-height: 2em
+			text-align: center 
+			text-decoration: none
+			&:hover
+				background: $font-color-g-d
+	&:nth-child(3n+1) 
+		margin-left: 0
+@include ipad()
+	nav
+		float: none
+		margin: 0 auto
+		padding: 0
+		width: 95%
+		li
+			width: 32.9%
+			margin: 0.2%
+			a
+				text-decoration: none
+				font-size: $font-size-s
+				color: $font-color-w

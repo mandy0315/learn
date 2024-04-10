@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>練習html_5</title>
+</head>
+<body>
+	<h1>表單</h1>
+
+	<h2>單行雙行輸</h2>	
+    <!--form表單 
+        input輸入
+        type＝""種類
+        盡量依種類分類 到手機版操作部會有問題
+        "text"一般文字
+        "email"信箱
+        "number"數量
+        "tel""電話
+        "password"帳號
+        "search"搜尋
+        "Date"日期
+        "url"網址
+        （"range"滑动条 "number"數值）min最小值 max最大值
+        value默認值
+    -->
+	<form action="指定伺服器的網址">
+	<p>
+	帳號：
+	<input type="text" name="帳號" size="30" maxlength="20">
+	</p>
+
+	<p>
+	密碼：
+	<input type="password" name="密碼" size="30" maxlength="20">
+    </p>
+
+	<p>填寫問題</p>
+    <textarea name="填寫問題" cols="37" rows="10" maxlength="20"></textarea>
+
+    </form>
+
+	
+    <h2>選單列</h2>
+
+    <form action="指定伺服器網址">
+	<p>
+	性別:
+	<!--radio只能選一種 checked="checked"預設值-->
+    <input type="radio" name="性別:" value="男">男
+    <input type="radio" name="性別:" value="女" >女
+    <input type="radio" name="性別:" value="彩虹" checked="checked">彩虹
+    </p>
+
+    <p>
+    興趣:
+    <!--checked可選復項-->
+    <input type="checkbox" name="興趣:" value="看劇">看劇
+    <input type="checkbox" name="興趣:" value="運動" checked="checked">
+    運動
+    <input type="checkbox" name="興趣:" value="電動">
+    電動
+    </p>
+
+    <p>
+    國家:
+    <!--select下拉選單 option選項 selected="selected"預設值-->
+    <select name="國家:">
+        <optgroup label="常見國家">
+            <option value="美國"selected="selected">美國</option>
+            <option value="日本">日本</option>
+            <option value="大陸">大陸</option>
+            <option value="台灣">台灣</option>
+        </optgroup>
+        <optgroup label="常見國家2">
+            <option value="美國" selected="selected">美國</option>
+            <option value="日本">日本</option>
+            <option value="大陸">大陸</option>
+            <option value="台灣">台灣</option>
+        </optgroup>
+    </select>
+    </p>
+
+    <p>
+    你喜歡的什麼食物?<br>*wins按ctrl/mac按command
+    <!-- size顯現多個選單列 multiple多選擇但要按上面-->
+    <br>
+    <select name="食物" size="3" multiple="multiple">
+    <option value="義大利麵" selected="selected">義大利麵</option>
+    <option value="燉飯">燉飯</option>
+    <option value="中華粥">中華粥</option>
+    <option value="牛排">牛排</option>
+    <option value="壽司">壽司</option>
+    </select>
+    </p>
+
+    </form>
+
+    <h2>上傳影音 按鈕1</h2>
+    <form action="指定伺服器網址" method="post">
+    <!--上傳檔案語音表格-->  
+    <!--multiple選擇多檔案--> 
+    <input type="file" name="上傳檔案" multiple="multiple">
+    <br>
+    <!--送出按鈕使用submit-->
+    <input type="submit" value="送出">
+
+    <p>住址:
+    <!--按鈕與文字都圖 rwd不適用-->
+    <input type="text" name="住址:" size="30" maxlength="30"> 
+    <input type="image" src="images/interface/button.png" width="100" height="20">
+    </p>
+
+    <p>打文字+小圖按鈕2
+    <!--送出 subit 其他互動按鈕使用button-->
+    <button><img src="images/interface/love.png" width="10" height="10">&emsp;love</button>
+    <input type="button" value="love">
+    <!--hidden隱藏內容-->
+    <input type="hidden" name="你愛甚麼?" value="水果">
+    </p>
+    
+    <h2>擴大選單範圍</h2>
+    <form action="指定伺服器網址">
+    <label>姓名:
+    <input type="text" name="姓名:" size="30" maxlength="10"></label>
+    <br>
+    性別1:
+    <label><input type="radio" name="性別1" value="男">男</label>
+    <label><input type="radio" name="性別1" value="女">女</label>
+    <br>
+    性別2:
+    <label><input type="checkbox" name="性別2" value="男">男</label>
+    <label><input type="checkbox" name="性別2" value="女">女</label>
+
+    <p>
+    <label>日期: <input type="date" name="日期"></label>
+    </p>
+    </form>
+
+    <h2>檢查訊息</h2>
+    <form action="指定伺服器網址" method="post">
+    <!--一般使用文字加required="required"/email與url在type:"email/url"-->
+    <p><label>
+    帳號 :&emsp;&emsp;&emsp;&emsp;<input type="text" name="帳號" size="30" maxlength="20" required="required">
+    </label>
+    </p>
+    <p>
+    <label>
+    密碼 :&emsp;&emsp;&emsp;&emsp;<input type="password" name="密碼" size="30" maxlength="20" required="required">
+    </label>
+    </p>
+    <p>
+    <label>
+    信箱 :&emsp;&emsp;&emsp;&emsp;<input type="email" name="信箱" size="30" maxlength="20">
+    </label>
+    </p>
+    <p>
+    <label>
+    輸入網址 :&emsp;&emsp;<input type="url" name="網址" size="30" maxlength="50">
+    </label>
+    </p>
+    <p>
+     <input type="submit" value="送出">
+    </p>
+    </form>
+
+
+    <h2>群組表格</h2>
+    
+    <form action="指定伺服器網址" method="post"></form>
+    <fieldset>
+        <legend>資料填寫</legend>
+        <p>
+        帳號 :&emsp;&emsp;&emsp;
+        <input type="text" name="帳號:" size="30" maxlength="20" required="required">
+        </p>
+        <p>
+        密碼 :&emsp;&emsp;&emsp;
+        <input type="password" name="密碼:" size="30" maxlength="20" required="required">
+        </p>
+        <p>
+        確認密碼 :&emsp;
+        <input type="password" name="確認密碼:" size="30" maxlength="20" required="required">
+        </p>
+        <p>
+        姓名 :&emsp;&emsp;&emsp;
+        <input type="text" name="姓名" size="30" maxlength="4" required="required">
+        </p>
+        <p>
+        性別 :&emsp;&emsp;&emsp;
+        <label><input type="radio" name="性別:" value="男" required="required">男</label>
+        <label><input type="radio" name="性別:" value="女" required="required">女</label>
+        </p>
+        <p>
+        <label>生日 :&emsp;&emsp;&emsp;
+        <input type="date" name="生日" required="required"></label>
+        </p>
+        <p>
+        電話 :&emsp;&emsp;&emsp;
+        <input type="text" name="電話:" size="30" maxlength="10" required="required">
+        </p>
+        <p>
+        信箱 :&emsp;&emsp;&emsp;
+        <input type="email" name="信箱：" size="30" maxlength="20">
+        </p>
+        <p>
+        國家 :&emsp;&emsp;&emsp;
+        <select name="國家:">
+        <option value="台灣" selected="selected">台灣</option>
+        <option value="香港">香港</option>
+        <option value="大陸">大陸</option>
+        </select>
+        </p>
+        <p>填寫資訊 :</p>
+        <textarea name="填寫資訊:" cols="41.9" rows="10"></textarea>
+        <p>
+        <input type="submit" name="資料填寫完成" value="送出">
+        </p>
+    </fieldset>
+    </form>
+
+    <h2>搜尋框</h2>
+    <form action="指定伺服器網址" method="get">
+    <label>搜尋 :&emsp;&emsp;<input type="searth" name="搜尋" size="30" maxlength="20" placeholder="搜尋文字框">
+    </label><input type="submit" value="搜尋">
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+@media print {
+  /* line 2, ../sass/atroot.sass */
+  .page1 {
+    width: 40%;
+  }
+}
+/* line 5, ../sass/atroot.sass */
+.page1 .active {
+  color: red;
+}
+
+@media print {
+  /* line 8, ../sass/atroot.sass */
+  .page1 {
+    width: 40%;
+  }
+}
+/* line 11, ../sass/atroot.sass */
+.active {
+  color: red;
+}

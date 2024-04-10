@@ -1,0 +1,44 @@
+/*
+Error: Inconsistent indentation: 4 spaces were used for indentation, but the rest of the document was indented using 1 tab.
+        on line 62 of /Users/tp718boss/Desktop/program_learn/sass_practice/sass/@mixin @include.sass
+
+57: .button2
+58: 	@extend .button
+59: 
+60: 
+61: @mixin button2  
+62:     background-color: blue
+63: 
+64: .button-1 
+65:     @include button2
+66: 
+67: .button-2
+
+Backtrace:
+/Users/tp718boss/Desktop/program_learn/sass_practice/sass/@mixin @include.sass:62
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:489:in `block in tabulate'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:447:in `each'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:447:in `each_with_index'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:447:in `tabulate'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:412:in `_to_tree'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:294:in `watch'
+/Library/Ruby/Gems/2.3.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:46:in `watch!'
+/Library/Ruby/Gems/2.3.0/gems/compass-1.0.3/lib/compass/commands/watch_project.rb:41:in `perform'
+/Library/Ruby/Gems/2.3.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+/Library/Ruby/Gems/2.3.0/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+/Library/Ruby/Gems/2.3.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Library/Ruby/Gems/2.3.0/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Library/Ruby/Gems/2.3.0/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+/Library/Ruby/Gems/2.3.0/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+/usr/local/bin/compass:22:in `load'
+/usr/local/bin/compass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: 4 spaces were used for indentation, but the rest of the document was indented using 1 tab.\A         on line 62 of /Users/tp718boss/Desktop/program_learn/sass_practice/sass/@mixin @include.sass\A \A 57: .button2\A 58: 	@extend .button\A 59: \A 60: \A 61: @mixin button2  \A 62:     background-color: blue\A 63: \A 64: .button-1 \A 65:     @include button2\A 66: \A 67: .button-2"; }

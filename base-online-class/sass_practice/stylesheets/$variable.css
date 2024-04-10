@@ -1,0 +1,21 @@
+/* line 9, ../sass/$variable.sass */
+.header {
+  color: red;
+  font-size: 32px;
+}
+/* line 12, ../sass/$variable.sass */
+.header ul {
+  color: red;
+}
+/* line 14, ../sass/$variable.sass */
+.header ul a {
+  font-size: 18px;
+}
+/* line 16, ../sass/$variable.sass */
+.header ul a:hover {
+  color: red;
+}
+/* line 18, ../sass/$variable.sass */
+.header li {
+  font-size: 16px;
+}

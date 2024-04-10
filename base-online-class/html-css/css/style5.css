@@ -1,0 +1,17 @@
+.wrapper{
+width: 900px;
+margin: 0 auto;
+}
+
+.header{
+height: 100px;
+background: red;
+}
+.content{
+height: 600px;
+background: yellow;
+}
+.footer{
+height: 250px;
+background: blue;
+}

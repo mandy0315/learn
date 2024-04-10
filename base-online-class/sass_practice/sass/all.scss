@@ -1,0 +1,14 @@
+//scss只要打"母群組"在"子"不用在打class 只要包在母群組裡
+//scss用法與css相近
+.box{
+	width: 300px;
+	height: 300px;
+	background: #000;
+	ul{
+		li{
+			color: red;
+			font-size: 20px;
+		}
+	}
+	
+}

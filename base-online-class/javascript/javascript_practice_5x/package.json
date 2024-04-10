@@ -1,0 +1,15 @@
+{
+  "name": "javascript_practice_5x",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+	  "build": "postcss ./src/css/tailwind.css -o ./public/css/tailwind.css"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4",
+    "postcss-cli": "^8.3.1"
+  }
+}

@@ -1,0 +1,9 @@
+{
+    //设置用户选中代码段的颜色
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#aa0000"
+    },
+    "liveServer.settings.port": 5504,
+    "git.ignoreLimitWarning": true
+
+}

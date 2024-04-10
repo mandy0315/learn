@@ -1,0 +1,9 @@
+// 多重分配
+@each $header, $color,$border in (h1: red dotted, h2: green, h3: blue)
+    #{$header}
+        color: $color
+
+@each $color,$border in (red,dotted),(blue,solid),(yellow,double)
+    .#{$color}
+        background-color : $color
+        border: $border

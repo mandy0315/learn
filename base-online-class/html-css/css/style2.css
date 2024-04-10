@@ -1,0 +1,31 @@
+h1{
+color: blue;
+font-size: 40px; 
+}	
+.style1{
+font-size: 16px; 
+text-indent: 32px;
+}
+a{
+color: red;
+}
+a:hover{
+color: blue;
+}
+
+h2{
+font-size: 24px;
+border-bottom : 5px red solid;
+border-left : 5px red solid;
+
+}
+.style2{
+
+}
+
+img{
+border: 5px #707070 solid;
+}
+img:hover{
+border: 5px pink solid;
+}

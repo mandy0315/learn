@@ -1,0 +1,15 @@
+.inputArea {
+  display: flex;
+}
+
+input {
+  padding: 4px 6px;
+  font-size: x-large;
+  width: 400px;
+}
+
+.result {
+  margin-top: 4px;
+  font-size: larger;
+  color: grey;
+}

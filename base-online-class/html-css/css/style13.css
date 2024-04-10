@@ -1,0 +1,187 @@
+/*消除瀏覽器設定*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+/*這裡的ol ul il也要*/
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/*如果要保留列表圖形文字 就把ol ul刪掉*/
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*消除瀏覽器設定最底*/
+/*要增加css樣式在他下方增加*/
+h1{
+color:blue; 
+font-size:30px;
+}
+p{
+font-size:18px;
+}
+/*兼容舊版語言*/
+*{
+box-sizing: border-box;
+/*firefox 舊版*/
+-moz-box-sizing:border-box;
+/*chrome 舊版*/
+-webkit-box-sizing:border-box;
+}
+
+.wrap{
+width: 900px;
+margin: 0 auto;
+}
+.header{
+border: 1px black solid;
+height: 80px;
+margin-bottom:10px; 
+}
+.header img{
+float: left;
+padding-top: 20px;
+padding-left: 20px;
+}
+.topmenu{
+float: right;
+margin-top: 30px;
+margin-right: 0px;
+}
+.topmenu li{
+float:left;
+margin-right: 20px
+}
+.topmenu a{
+font-family: Arial;
+font-size: 16px;
+text-decoration: none;
+color: black;
+}
+.topmenu a:hover{
+color: red;
+}
+
+.menu{
+float:left; 
+border: 1px black solid;
+width: 200px;
+}
+.menu p{
+padding-left: 20px;
+font-size: 16px;
+font-family: Arial;
+line-height: 1.5;
+}
+
+.content{
+float:left; 
+width: 700px;
+border: 1px black solid;
+}
+.sale{
+position:absolute;
+left: 0;
+top: 0;
+background: red;
+font-size: 14px;
+color: white;
+padding: 8px;
+}
+.content img{
+width: 100%;
+margin-bottom: 5px; 
+}
+.content h2{
+font-size: 16px;
+font-family: Arial;
+margin-bottom: 5px; 
+padding-left: 5px;
+}
+.content p{
+font-size: 16px;
+font-family: Arial;
+padding-left: 5px;
+}
+.content span{
+font-size: 20px;
+font-family: Arial;
+font-weight: bold;
+color: red;
+
+}
+.button a{
+float: left;
+text-decoration: none;
+background: #00cc99;
+color: white;
+font-size: 16px;
+padding: 5px 25px;
+margin-top:10px;
+margin-left:5px;
+}
+.button a:hover{
+background: red;
+}
+.content li{
+position: relative;
+float: left;
+border: 1px black solid;
+width: 163px;
+height: 270px;
+margin-right: 5px;
+margin-left: 5px;
+margin-bottom:10px; 
+}
+.nav{
+margin-bottom: 10px; 
+}
+
+.clearfix{
+clear: both;
+}
+
+.footer{
+background: #00cc99;
+height: 50px;
+}
+.footer p{
+font-size: 14px;
+text-align: center;
+padding-top: 20px;
+color: white;
+font-family: Arial;
+}

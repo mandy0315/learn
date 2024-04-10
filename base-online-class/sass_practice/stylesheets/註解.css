@@ -1,0 +1,7 @@
+@charset "UTF-8";
+/*我是註解
+ *我是第二行 */
+/* line 3, ../sass/註解.sass */
+header {
+  color: blue;
+}

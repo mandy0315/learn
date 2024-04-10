@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/*reset start */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  -webkit-appearance: none;
+}
+
+/*reset end */
+/*界於段點之間調整 最大768到最小480之間加and */
+header {
+  height: 80px;
+  border-bottom: 1px solid #00a67d;
+  position: relative;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.logo {
+  float: left;
+  padding: 1.5em 0;
+}
+.logo a {
+  background: url(../image/logo.svg) no-repeat;
+  width: 170px;
+  height: 35px;
+  background-size: contain;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+}
+
+nav {
+  width: 60%;
+  float: right;
+  overflow: hidden;
+  margin-top: 1.5em;
+  margin-right: 1em;
+}
+
+.menu {
+  float: right;
+  width: 100%;
+}
+.menu li {
+  float: left;
+  width: calc(100%/6 - 2px);
+  margin-left: calc(2px * 6 / 5);
+}
+.menu li a {
+  display: block;
+  background: #00a67d;
+  color: #fff;
+  text-align: center;
+  line-height: 1.5em;
+  text-decoration: none;
+}
+.menu li a:hover {
+  background: #008d6a;
+}
+
+.menu li:nth-child(6n+1) {
+  margin-left: 0;
+}
+
+.mobile-link {
+  display: none;
+  float: right;
+}
+
+.mobile-close {
+  display: none;
+}
+
+.mobilemenu {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  transition: all 2s;
+  height: 0;
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    width: 10%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .mobile-link {
+    display: block;
+  }
+
+  .mobilemenu {
+    display: block;
+  }
+
+  .open .mobilemenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: all 2s;
+    height: 100vh;
+  }
+  .open .mobilemenu .mobile-close {
+    display: block;
+    float: right;
+    margin-right: 1.5em;
+    margin-top: 1.6em;
+  }
+  .open .mobilemenu .menu {
+    display: block;
+    padding-top: 5em;
+  }
+  .open .mobilemenu .menu li {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    padding: 1em;
+  }
+  .open .mobilemenu .menu li a {
+    background: none;
+    color: black;
+  }
+  .open .mobilemenu .menu li a:hover {
+    color: #008d6a;
+  }
+}
+section .container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+section p {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: center;
+}

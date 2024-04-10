@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <!-- <link rel="stylesheet" href="css/all.css"> -->
+    <!-- vue3.js -->
+    <script src="https://unpkg.com/vue@next"></script>
+    
+  </head>
+  <body>
+    <div id="demo">
+      <!-- 注意下面 input 對應的都是 v-model="checkedNames"  -->
+      <p>Checked names: {{ checkedNames }}</p>
+      <!-- v-for 跑陣列 ; names 陣列in裡面 -->
+      <label v-for=" n in names ">
+        <input 
+          type="checkbox" 
+          id="jack" 
+          :value="n" 
+          v-model="checkedNames">
+        {{ n }}
+      </label>
+    </div>
+    
+
+    <script src="./app.js"></script>
+  </body>
+</html>

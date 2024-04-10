@@ -1,0 +1,32 @@
+/* line 3, ../sass/each.sass */
+h1 {
+  color: red dotted;
+}
+
+/* line 3, ../sass/each.sass */
+h2 {
+  color: green;
+}
+
+/* line 3, ../sass/each.sass */
+h3 {
+  color: blue;
+}
+
+/* line 7, ../sass/each.sass */
+.red {
+  background-color: red;
+  border: dotted;
+}
+
+/* line 7, ../sass/each.sass */
+.blue {
+  background-color: blue;
+  border: solid;
+}
+
+/* line 7, ../sass/each.sass */
+.yellow {
+  background-color: yellow;
+  border: double;
+}

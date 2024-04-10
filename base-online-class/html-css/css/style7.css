@@ -1,0 +1,17 @@
+/*兼容舊版語言*/
+*{
+box-sizing: border-box;
+/*firefox 舊版*/
+-moz-box-sizing:border-box;
+/*chrome 舊版*/
+-webkit-box-sizing:border-box;
+}
+
+.style1{
+width:150px;
+height: 150px;
+background: black;
+padding:30px;
+border: 5px yellow solid;
+
+}

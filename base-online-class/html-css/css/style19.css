@@ -1,0 +1,10 @@
+.box{
+width: 150px;
+height: 150px;
+background: black;
+border-radius: 150px;
+border: 10px solid blue;
+color: white;
+text-align: center;
+line-height: 150px;
+}

@@ -1,0 +1,24 @@
+.logo{
+height: 300px;
+width: 300px;
+/*background-image: url(../images/logo.png);
+background-repeat: no-repeat;
+background-color:red;
+background-position: 20px 10px;*/
+background:red 20px 10px url(../images/logo.png) no-repeat; 
+}
+
+.header h1{
+float: left;
+}
+.header h1 a{
+background:20px 20px url(../images/logo.png) no-repeat; 
+width: 900px;
+height: 100px;
+display: block;
+
+/*隱藏關鍵字*/
+text-indent: 101%;
+overflow: hidden;
+white-space: nowrap;
+}

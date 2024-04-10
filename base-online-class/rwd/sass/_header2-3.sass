@@ -1,0 +1,119 @@
+
+header
+	height: 80px
+	border-bottom: 1px solid $font-color-g
+
+.container
+	@include container
+	width: 100%
+	overflow: hidden1
+	
+.logo
+	float: left
+	padding: 1.5em 0
+	a
+		
+		background: url(../image/logo.svg) no-repeat
+		width: 170px
+		height: 35px
+		@include hide-text
+		display: block
+nav
+	width: 60%
+	float: right
+	overflow: hidden
+	margin-top: 1.5em
+	margin-right: 1em
+.menu	
+	float: right
+	width: 100%
+	li
+		float: left
+		width: calc(100%/6 - 2px)
+		margin-left: calc(2px * 6 / 5)
+		a
+			display: block
+			background: $font-color-g
+			color: #fff
+			text-align: center 
+			line-height: 1.5em
+			text-decoration: none
+			&:hover
+				background: $font-color-g-d
+.menu li:nth-child(6n+1) 
+	margin-left: 0
+.menulike
+	display: none
+	float: right
+aside
+	position: absolute
+	top: 0
+	bottom: 0
+	width: 270px
+	height: 100%
+	background: #f6f6f6
+	/*overflow: hidden 超過0就隱藏*/
+	overflow: hidden
+	/*transform是box位移變形語法*/
+	-webkit-transform: translateX(-270px)
+	transform: translateX(-270px)
+.menuclose
+	float: right
+	margin-top: 1.5em
+	margin-right: 1em
+
+	
+@include ipad()
+	main
+		position: relative	
+	header
+		/*固定選單*/
+		position: fixed
+		width: 100%
+		/*注意要加背景色*/
+		background: white
+		z-index: 10
+	.content
+		padding-top: 100px
+		position: absolute
+		z-index: 5
+	nav
+		width: 10%
+	.menulike	
+		display: block
+	.menu 
+		display: none
+
+	.open .main
+		-webkit-transform: translateX(270px)
+		transform: translateX(270px)
+		transition: all .3s
+	.open aside
+		-webkit-transform: translateX(0px)
+		transform: translateX(0px)
+		transition: all .3s
+		.menu
+			display: block
+			padding-top: 5em
+			li
+				display: block
+				width: 100%
+				margin-left: 0
+				padding-bottom: 0.5em
+				a
+					background: none
+					color: black
+					line-height: 4em
+					&:hover
+						color: white
+
+			
+	
+
+section
+	.container
+		@include container
+	p
+		width: 95%
+		margin: 0 auto
+		text-align: center

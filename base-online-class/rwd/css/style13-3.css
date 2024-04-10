@@ -1,0 +1,226 @@
+@charset "UTF-8";
+/*reset start */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  -webkit-appearance: none;
+}
+
+/*reset end */
+/*界於段點之間調整 最大768到最小480之間加and */
+header {
+  height: 80px;
+  border-bottom: 1px solid #00a67d;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden1;
+}
+
+.logo {
+  float: left;
+  padding: 1.5em 0;
+}
+.logo a {
+  background: url(../image/logo.svg) no-repeat;
+  width: 170px;
+  height: 35px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+}
+
+nav {
+  width: 60%;
+  float: right;
+  overflow: hidden;
+  margin-top: 1.5em;
+  margin-right: 1em;
+}
+
+.menu {
+  float: right;
+  width: 100%;
+}
+.menu li {
+  float: left;
+  width: calc(100%/6 - 2px);
+  margin-left: calc(2px * 6 / 5);
+}
+.menu li a {
+  display: block;
+  background: #00a67d;
+  color: #fff;
+  text-align: center;
+  line-height: 1.5em;
+  text-decoration: none;
+}
+.menu li a:hover {
+  background: #008d6a;
+}
+
+.menu li:nth-child(6n+1) {
+  margin-left: 0;
+}
+
+.menulike {
+  display: none;
+  float: right;
+}
+
+aside {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 270px;
+  height: 100%;
+  background: #f6f6f6;
+  /*overflow: hidden 超過0就隱藏 */
+  overflow: hidden;
+  /*transform是box位移變形語法 */
+  -webkit-transform: translateX(-270px);
+  transform: translateX(-270px);
+}
+
+.menuclose {
+  float: right;
+  margin-top: 1.5em;
+  margin-right: 1em;
+}
+
+@media (max-width: 768px) {
+  main {
+    position: relative;
+  }
+
+  header {
+    /*固定選單 */
+    position: fixed;
+    width: 100%;
+    /*注意要加背景色 */
+    background: white;
+    z-index: 10;
+  }
+
+  .content {
+    padding-top: 100px;
+    position: absolute;
+    z-index: 5;
+  }
+
+  nav {
+    width: 10%;
+  }
+
+  .menulike {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .open .main {
+    -webkit-transform: translateX(270px);
+    transform: translateX(270px);
+    transition: all 0.3s;
+  }
+
+  .open aside {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    transition: all 0.3s;
+  }
+  .open aside .menu {
+    display: block;
+    padding-top: 5em;
+  }
+  .open aside .menu li {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    padding-bottom: 0.5em;
+  }
+  .open aside .menu li a {
+    background: none;
+    color: black;
+    line-height: 4em;
+  }
+  .open aside .menu li a:hover {
+    color: white;
+  }
+}
+section .container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+section p {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}

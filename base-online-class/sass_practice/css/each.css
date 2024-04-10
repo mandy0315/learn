@@ -1,0 +1,26 @@
+h1 {
+  color: red dotted;
+}
+
+h2 {
+  color: green;
+}
+
+h3 {
+  color: blue;
+}
+
+.red {
+  background-color: red;
+  border: dotted;
+}
+
+.blue {
+  background-color: blue;
+  border: solid;
+}
+
+.yellow {
+  background-color: yellow;
+  border: double;
+}
