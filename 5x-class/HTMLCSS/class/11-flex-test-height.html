@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .box{
+            display: flex;
+            width: 100%;
+            border: 1px solid red ;
+        }
+        .item{
+            /* 主軸在內容物可以填滿，flex 整個空間都是它的 */
+            display: flex;
+            /* 主軸改到上下，子層高度 */
+            flex-direction: column; 
+            width: 300px;
+            padding: 0 1%;
+            box-sizing: border-box;
+        }
+        .item img{
+            width: 100%;
+            height: 200px;
+        }
+        .item-text{
+            /* flex 高度能100%空間運用;影響margin */
+            display: flex;
+            flex-direction: column;
+            background-color: gray;
+            /* 高度撐滿 */
+            height: 100%;
+            padding: 10px;
+        }
+        /* 分配完剩餘空間 */
+        /* .item-text p{
+            flex-grow: 1;
+        } */
+        /* 剩餘空間移到上方 */
+        .item-text button{
+            margin-top: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="box wrap">
+        <div class="item">
+            <img src="https://fakeimg.pl/300/">
+            <div class="item-text">
+                <p>加強計算招生故意天下大小全新娛樂，一會更加行動您可以機器，電子商務結果文章眼神出口水果，文章儘量投票工具，無奈藝術快速安排以往你沒有此刻預防臺東螢幕，兩年明確解釋溫度表面女朋友通過街道，審核聽說剛才一聲資格在這個你看全體，工藝依法推出滿足上網，難以順利為。</p>
+                <button>more</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://fakeimg.pl/300/">
+            <div class="item-text">
+                <p>加強計算招生故意天下大小全新娛樂，一會更加行動您可以機器，電子商務結果文章眼神出口水果，文章儘量投票工具，無奈藝術</p>
+                <button>more</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://fakeimg.pl/300/">
+            <div class="item-text">
+                <p>加強計算招生故意天下大小全新娛樂，一會更加行動您可以機器，電子商務結果文章眼神出口水果</p>
+                <button>more</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

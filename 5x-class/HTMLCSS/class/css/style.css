@@ -1,0 +1,21 @@
+/* 載入 reset */
+/* @import url("reset.css"); */
+.wrapper{
+    max-width: 1200px;
+    margin: auto;
+}
+h1,h2,h3{
+    color: red;
+}
+p{
+    color: blue;
+}
+ul{
+    margin: 20px 0;
+}
+.new01 .main-title{
+    color: salmon;
+}
+.main-title{
+    border-bottom: 1px solid black;
+}

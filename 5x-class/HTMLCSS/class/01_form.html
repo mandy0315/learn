@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+    label{
+        display: block;
+        padding: 20px 0px;
+    }
+    </style>
+</head>
+<body>
+    <form action="">
+        <!-- label表格對應名稱，點擊文字可輸入表格  -->
+        <!-- 單獨分開，透過 for&id  -->
+        <label for="userName">姓名</label>
+        <input type="text" id="userName">
+        <!-- 群組，把for 刪除  -->
+        <label>
+            姓名
+            <input type="text">
+        </label>
+
+        <!-- type 種類; name 是 <input> 元素的名称-->
+            <!-- 快速輸入 -->
+            input:c
+            input:t
+            <label>日期
+            <input type="date" name="date">
+            </label>
+            <label>日期時間
+                <input type="datetime-local">
+            </label>
+            <label>檔案
+                <input type="file">
+            </label>
+            <label>數字
+                <input type="number">
+            </label>
+            <label>網址
+                <input type="url">
+            </label>
+            <label>顏色
+                <input type="color">
+            </label>
+            
+        <!-- 選項 -->
+        <label>性別
+            <!-- 單選 -->
+            <input type="radio" name="radio">女
+            <input type="radio" name="radio">男
+        </label>
+        <label>興趣
+            <!-- 複選 -->
+            <input type="checkbox" name="checkbox">看電影
+            <input type="checkbox" name="checkbox">打電動
+        </label>
+        <label>備註
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </label>
+
+        <!-- 下拉選單 -->
+        <select name="" id="">
+            <option value="台北市">台北市</option>
+            <option value="新北市">新北市</option>
+        </select>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .wrap {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .item {
+      height: 200px;
+      background-color: #f00;
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+      .wrap {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .item {
+        /* 768/2(欄) =384-30（左右15）= 354px */
+        /* 改成％：358/768*100= */
+        width: 46.09375%;
+        /* 改成％：15/768*100=1.953125 */
+        margin: 15px 1.953125%;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      .item {
+        /* 1024/3(欄) =341.333333-30（左右15）= 311.333333px */
+        /* 改成％：311.333333/1024*100= */
+        width: 30.403645%;
+        margin: 15px 1.46484375%;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      .item {
+        /* 1200/6(欄) =200-30（左右15）= 170px */
+        /* 改成％：311.333333/1200*100= */
+        width: 14.166666%;
+        margin: 15px 1.25%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="wrap">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+
+
+
+
+</body>
+
+</html>

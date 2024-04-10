@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .menu-control{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-color: gray;
+        position: relative;
+      }
+      .menu-control span{
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        height: 2px;
+        width: 30px;
+        background-color: white;
+      }
+      .menu-control span:nth-child(1){ 
+        top: 10px; 
+        transition: top .4s .4s,transform .4s;
+      }
+      .menu-control span:nth-child(2){ 
+        top: 19px; 
+        opacity: 1;
+        transition: opacity .2s;
+      }
+      .menu-control span:nth-child(3){ 
+        bottom: 10px;
+        transition: bottom .4s .4s,transform .4s;
+      }
+      /* :checked 點選後會覆寫原本 transition  */
+      #menu-check:checked ~ .menu-control span:nth-child(1){
+        top: 19px;
+        transform: rotate(45deg);
+        transition: top .4s, transform .4s .4s;
+      }
+      #menu-check:checked ~ .menu-control span:nth-child(2){
+        opacity: 0;
+        transition: opacity .2s;
+      }
+      #menu-check:checked ~ .menu-control span:nth-child(3){
+        bottom: 19px;
+        transform: rotate(-45deg);
+        transition: bottom .4s, transform .4s .4s;
+      }
+
+      .menu-control2{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-color: gray;
+      }
+      .menu-hb{
+        width: 30px;
+        height: 100%;
+        margin: auto;
+        position: relative;
+      }
+      .menu-hb::before,.menu-hb::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        display: inline-block;
+        background-color: white;
+        left: 0;
+        top: 10px;
+        transition: box-shadow 60ms 180ms ease-out, top 180ms ease-out,transform 180ms ease-out;
+      }
+      .menu-hb::before{
+        box-shadow: 0 9px 0 white;
+      }
+      .menu-hb::after{
+        bottom: 10px;
+        top: initial;
+      }
+      #menu-check:checked ~ .menu-control2 .menu-hb::before{
+        top: 19px;
+        box-shadow: none;
+        transition: box-shadow 60ms ease-out, top 280ms 60ms ease-out,transform 280ms 60ms ease-out;
+        -webkit-transition: box-shadow 60ms ease-out, top 280ms 60ms ease-out,transform 280ms 60ms ease-out;
+        -moz-transition: box-shadow 60ms ease-out, top 280ms 60ms ease-out,transform 280ms 60ms ease-out;
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+      }
+      #menu-check:checked ~ .menu-control2 .menu-hb::after{
+        bottom: 19px;
+        transition: box-shadow 60ms ease-out, top 280ms 60ms ease-out,transform 280ms 60ms ease-out;
+        -webkit-transition: box-shadow 60ms ease-out, top 280ms 60ms ease-out,transform 280ms 60ms ease-out;
+        -moz-transition: box-shadow 60ms ease-out, top 280ms 60ms ease-out,transform 280ms 60ms ease-out;
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+      }
+
+    </style>
+  </head>
+    <!-- span*3 -->
+    <input type="checkbox" name="" id="menu-check">
+    <label for="menu-check" class="menu-control">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <!-- before&after&box-shadow -->
+    <label for="menu-check" class="menu-control2">
+      <div class="menu-hb"></div>
+    </label>
+
+
+  </body>
+</html>

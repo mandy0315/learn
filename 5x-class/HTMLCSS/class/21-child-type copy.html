@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    nav a{
+      border-right: 1px solid gray;
+      padding: 0 20px;
+    }
+    /* 由後面往前看條件 */
+    /* child 順序; type 種類 */
+    a:nth-child(4){
+      border-right: 0px;
+    }
+    .box div:last-of-type{
+      background-color: red;
+    }
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .box2 li{
+      width: 60px;
+      height: 60px;
+      background-color: gray;
+      display: inline-block;
+    }
+    /* n=幾倍 + b=裡面的第幾 */
+    /* 0+5 =5 5以後 */
+    .box2 li:nth-child(n+5){
+      background-color: red;
+    }
+    /* 範圍選取 */
+    /* .box3 h1 ~ p{
+      color: red;
+    } */
+    .box3 h1 + p{
+      color: blue;
+    }
+    .box4,.box4 div{
+      border: 4px solid red;
+      padding: 20px;
+      background-color: cadetblue;
+    }
+    .box4 > div{
+      background-color: brown;
+    }
+    .box{
+      background-repeat: repeat-x;
+      background-position: c;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box4">
+    <div><div></div></div>
+  </div>
+  <div class="box3">
+    <h1>title</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, iste beatae repudiandae quibusdam eaque hic itaque aliquam eveniet ipsum. Cumque!</p>
+    <p>Esse perspiciatis commodi ex quia laborum dicta non illo atque officia corporis dolorum, quo, rerum corrupti id in molestiae possimus.</p>
+    <p>Ipsam, non sed. Possimus eius facere nemo voluptate sint nostrum recusandae repellat, ab delectus ratione dolorum maxime id corporis eaque!</p>
+  </div>
+  <!-- p*3>lorem50 -->
+  <div class="box2">
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+    </ul>
+  </div>
+  <div class="box">
+    <div>div</div>
+    <span>span</span>
+    <div>div</div>
+    <span>span</span>
+    <div>div</div>
+    <span>span</span>
+    <div>div</div>
+    <span>span</span>
+    <div>div</div>
+    <span>span</span>
+  </div>
+  <nav>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+  </nav>
+</body>
+
+</html>

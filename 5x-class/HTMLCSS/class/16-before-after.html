@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+			.text{
+				background-color: #eee;
+				padding: 20px;
+			}
+			/* 之前 */
+			.text::before{
+				content: '';
+				display: inline-block;
+				width: 0px;
+				height: 0px;
+				border-top: 8px solid transparent;
+				border-left: 8px solid black;
+				border-bottom: 8px solid transparent;
+				vertical-align: middle;
+				position: relative;
+				bottom: 2px;
+				margin-right: 10px;
+			}
+			/* 之後 */
+			/* ''空字串 */
+			/* .text::after{
+				
+				content: '終點'; 
+			} */
+			/* 透過 box border 做一個三角形，上下透明 */
+			.box{
+				width: 0;
+				height: 0;
+				/* 如果 */
+				/* border-top: 40px solid transparent; */
+				border-right: 40px solid red;
+				border-bottom: 100px solid transparent;
+				/* border-left: 40px solid transparent; */
+			}
+			.egg{
+				width: 95px;
+				height: 125px;
+				border-radius: 50% 50% 50% 50% / 62% 62% 38% 38%;
+				background-color: gray;
+			}
+
+    </style>
+</head>
+<body>
+	<div class="egg"></div>
+	<p class="text">咖啡當中判斷一路老。</p>
+	<div class="box"></div>
+</body>
+</html>

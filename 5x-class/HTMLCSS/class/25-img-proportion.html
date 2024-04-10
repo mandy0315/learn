@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>格線系統</title>
+  <style>
+    /* container 跟 wrap 命名方式？？ */
+    .wrap{
+      /* width: 1000px; */
+      border: 1px solid red;
+      display: flex;
+    }
+    .col{
+      width: 50%;
+    }
+    .mv,.map{
+      /* 560px */
+      width: 100%;
+      height: 0;
+      /* 不設高度 子層內容物+padding 往下長 */
+      /* 高度等比例縮放 315/560*100= 56.25*/
+      padding-bottom: 56.25%;
+      background-color: red;
+      position: relative;
+    }
+    .mv iframe,.map iframe{
+      width: 100%;
+      height: 100%;
+      /* 會定在父層內 */
+      position: absolute;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="col">
+      <div class="mv">
+        <!-- 560x315影片 -->
+        <!-- iframe 遷入 -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/47yM24faXbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7040165032213!2d121.54387285048013!3d25.044116843961366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdb03833c3d%3A0xe8bccd292c2639c5!2z5Y2a5YWo5amm55Si56eR6Ki65omA!5e0!3m2!1szh-TW!2stw!4v1617181420343!5m2!1szh-TW!2stw"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+
+  </div>
+
+    
+
+</body>
+</html>

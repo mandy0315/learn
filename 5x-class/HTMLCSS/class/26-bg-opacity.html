@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .box{
+        width: 100%;
+        position: relative;
+        background-color: black;
+        padding: 10rem 0;
+      }
+      .box::after{
+        content: '';
+        background: url("https://60659140854f2b0007496988--5xtraining.netlify.app/_next/static/images/banner-home-aca80ad097b4d77ffa3b82879b5d14a8.jpg")no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: .6;
+      }
+      .box2{
+        width: 100%;
+        background: url("https://60659140854f2b0007496988--5xtraining.netlify.app/_next/static/images/banner-home-aca80ad097b4d77ffa3b82879b5d14a8.jpg") no-repeat;
+        background-size: cover;
+        padding: 12rem 0;
+        position: relative;
+      }
+      .box2::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: .6;
+        background-color: black;
+      }
+      .box-txt{
+        margin: 0 auto;
+        width: 80%;
+        color: white;
+        position: relative;
+        z-index: 4;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="wrap">
+      <!-- 第一種 BGColor + after BGIMG & opacity -->
+      <div class="box">
+        <div class="box-txt">
+          <h1>五倍學習，突破你的可能性</h1>
+          <p>掌握實戰經驗，從初心素人到業界接軌，讓專業師資為你重新定義程式教育。</p>
+        </div>
+      </div>
+      <!-- 第二種 BGIMG + after BGColor & opacity -->
+      <div class="box2">
+        <div class="box-txt">
+          <h1>五倍學習，突破你的可能性</h1>
+          <p>掌握實戰經驗，從初心素人到業界接軌，讓專業師資為你重新定義程式教育。</p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

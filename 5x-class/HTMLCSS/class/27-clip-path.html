@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      /* clip-path( x y , x y , x y )  */
+      .box{
+        /* clip-path x- left 0% ,x- right 100% ; 
+        y-bottom 100% y-top 0% */
+        /* clip-path( 第一個點 , 第二個點 , 第三個點 )  */
+        clip-path: polygon(0% 100%,50% 50%,100% 100%);
+        -webkit-clip-path: polygon(0% 100%,50% 50%,100% 100%);
+        -moz-clip-path: polygon(0% 100%,50% 50%,100% 100%);
+        background-color: red;
+        width: 100%;
+        height: 80px;
+        margin-bottom: 200px;
+      }
+    /* border */
+      section{
+        background-color: #ccc;
+        position: relative;
+      }
+      .about{
+        padding: 50px 0;
+      }
+      .about:before{
+        content: '';
+        width: 0;
+        height: 0;
+        display: block;
+        border-bottom: 50px solid #ccc;
+        border-left: 70vw solid transparent;
+        border-right: 30vw solid transparent;
+        position: absolute;
+        top: 0px;
+        transform: translateY(-100%);
+      }
+      .about:after{
+        content: '';
+        width: 0;
+        height: 0;
+        display: block;
+        border-top: 50px solid #ccc;
+        border-left: 70vw solid transparent;
+        border-right: 30vw solid transparent;
+        position: absolute;
+        bottom: 0px;
+        transform: translateY(100%);
+      }
+      .container{
+        margin: auto;
+        max-width: 768px;
+      }
+    </style>
+  </head>
+    <div class="box"></div>
+    
+    <section class="section about">
+      <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis provident veniam tempore ipsum vel! Soluta
+          omnis reprehenderit perspiciatis numquam? Optio, quae adipisci perferendis fugit nam suscipit doloribus nulla
+          totam explicabo?</p>
+        <p>Esse mollitia odio officiis aliquid voluptatibus delectus tenetur id, neque quo modi fugit voluptas aliquam ab
+          fuga maiores quis exercitationem incidunt nam veniam, minima cum. In molestiae ullam harum possimus!</p>
+        <p>Blanditiis expedita dolore commodi sed nesciunt eveniet praesentium, odit aliquid rem ipsam culpa possimus!
+          Temporibus, ipsa ut libero obcaecati dolores sequi dolore ipsum. Aspernatur, id culpa maxime nemo iste dolor!</p>
+      </div>
+    </section>
+  </body>
+</html>
