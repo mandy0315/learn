@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- css -->
+    <style type="text/css">
+        .box{
+            border: 1px blue solid;
+            width: 220px;
+            height: 130px;
+            position: relative;
+            overflow: hidden;
+        }
+        .box:hover .title{
+            bottom: 0;
+        }
+        .title{ 
+            width: 100%;
+            font-size: 24px;
+            color: white;
+            text-align: center;
+            background: black;
+            position: absolute;
+            bottom: -40px;
+        }
+        /* 加transition動態*/
+        .box2{
+            border: 1px blue solid;
+            width: 220px;
+            height: 130px;
+            position: relative;
+            overflow: hidden;
+        }
+        .box2:hover .title2{
+            bottom: 0;
+        }
+        .title2{
+            transition: bottom 1s;
+            width: 100%;
+            font-size: 24px;
+            color: white;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.8);
+            position: absolute;
+            bottom: -40px;
+        }
+    </style>
+
+    <!-- 載入核心 -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- 載入效果 -->
+    <script src="js/jq6.js"></script>
+</head>
+<body>
+    <!-- 用css出現 -->
+    <div class="box">
+        <img src="image/練習圖.jpg" width="100%" alt="">
+        <div class="title">商品標題</div>
+    </div>
+
+    <!-- 進階加入transition -->
+    <div class="box2">
+        <img src="image/練習圖.jpg" width="100%" alt="">
+        <div class="title2">商品標題</div>
+    </div>
+</body>
+</html>

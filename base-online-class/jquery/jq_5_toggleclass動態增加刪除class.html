@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- css -->
+    <style type="text/css">
+        /* 一般開啟隱藏 */
+        .text{
+            display: none;
+        }
+        /* 新增.active 打開 */
+        .text.active{
+            display: block;
+        }
+
+        /* 淡入淡出動態 */
+        .text2{
+            opacity: 0;
+            transition: all 2s;
+        }
+        .text2.active2{
+            opacity: 1;
+        }
+    </style>
+
+    <!-- 載入核心 -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- 載入效果 -->
+    <script src="js/jq5.js"></script>
+</head>
+<body>
+    <input type="button" class="button" value="留言">
+    <div class="text">
+        <textarea name="" id="" cols="20" rows="5"></textarea>
+        <input type="submit" value="送出">
+    </div>
+    <!-- 進階 -->
+    <input type="button" class="button2" value="留言">
+    <div class="text2">
+        <textarea name="" id="" cols="20" rows="5"></textarea>
+        <input type="submit" value="送出">
+    </div>
+    
+</body>
+</html>

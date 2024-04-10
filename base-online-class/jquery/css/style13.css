@@ -1,0 +1,136 @@
+/*消除瀏覽器設定*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+/*這裡的ol ul il也要*/
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/*如果要保留列表圖形文字 就把ol ul刪掉*/
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+*{
+box-sizing: border-box;
+/*firefox 舊版*/
+-moz-box-sizing:border-box;
+/*chrome 舊版*/
+-webkit-box-sizing:border-box;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button{
+    -webkit-appearance: none;
+}
+/*消除瀏覽器設定最底*/
+
+/* css開始 */
+
+.wrapper{
+    margin: 0 auto;
+    max-width: 500px;
+}
+.clearfix{
+    clear: both;
+}
+header{
+    background: pink;
+    padding: 1em 0;
+}
+.ad{
+    position: fixed;
+    bottom: 0px;
+    width: 300px;
+    height: 150px;
+    background: black;
+    animation-name: adUp;
+    animation-duration: 1.5s;
+}
+@keyframes adUp{
+    from{
+        bottom: -150px;
+    }
+    to{
+        bottom: 0px;
+    }
+}
+.ad-close{
+    position: absolute;
+    right: 0;
+    background: red;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+.ad p{
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+    line-height: 1.5;
+}
+.font-menu{
+    float: right;
+    
+}
+.font-menu li{
+    float: left;
+    
+}
+.font-menu a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 15px 15px;
+}
+.font-menu a:hover,a.active{
+    background: blue;
+
+}
+section{
+    padding: 1em 0;
+}
+.content p{
+    line-height: 1.5;
+    font-size: 16px;
+}
