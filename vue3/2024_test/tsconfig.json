@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
+    "noEmit": true,
+		"verbatimModuleSyntax": true,
+
+    /*新增 */
+    "paths": {
+      "/src/*": ["./src/*"], 
+    },
+    "types": [
+      "vite/client", // 識別 import.meta
+      "cypress"
+    ],
+    "forceConsistentCasingInFileNames": false, // 禁用檢查路徑檔案大小寫
+
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts","src/**/*.vue","./cypress.d.ts"],
+  "exclude": ["cypress"],
+  "references": [
+    { "path": "./tsconfig.node.json" },
+  ]
+}
